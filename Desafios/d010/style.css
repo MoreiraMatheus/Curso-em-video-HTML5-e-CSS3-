@@ -20,106 +20,162 @@
     --fonte_android: 'idroid', cursive;
 }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
-    background-color: #84e1ad;
+*{
     margin: 0px;
+    padding: 0px;
 }
 
-mark{
-    color: #1a5c38;
-    background-color: white;
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte_padrao);
+}
+
+strong{
+    color: var(--cor4);
+}
+
+img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+img.pequena{
+    max-width: 350px;
+}
+
+iframe{
+    display: block;
+    width: 90%;
+    margin: auto;
 }
 
 header{
-    text-align: center;
-    padding: 5px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
     color: white;
-    background-image: linear-gradient( to bottom, #3bd27f, #1a5c38);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
+    text-align: center;
+    padding: 10px;
+    min-height: 120px;
+}
+header > h1{
+    padding: 20px;
+}
+header p{
+    font-size: 1.2em;
+    max-width: 500px;
+    margin: auto;
 }
 
 nav{
-    text-align: left;
+    background-color: var(--cor5);
+    padding: 10px;
 }
 nav > a{
     color: white;
     text-decoration: none;
+    margin: 0px 10px;
     font-weight: bold;
-    padding: 5px 10px;
-    margin: 10px 0px;
 }
 nav > a:hover{
-    color: #1a5c38cb;
-    background-color: #39cf7d;
-    border-radius: 10px;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    transition-duration: 0.3s;
 }
 
 main{
-    padding-top: 10px;
-    min-width: 400px;
+    min-width: 320px;
     max-width: 800px;
     margin: auto;
+    margin-bottom: 30px;
     background-color: white;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.452);
+    border-radius: 0px 0px 15px 15px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.479);
+}
+main p{
+    text-indent: 20px;
+    line-height: 1.5em;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+    background-color: var(--cor1);
+    padding: 2px 6px;
+    border-radius: 0px 10px;
+}
+main a:hover{
+    text-decoration: underline;
+    color: var(--cor3);
 }
 
-article{
-    padding: 10px;
-}
 article > h1{
-    font-family: 'idroid';
-    color: #1a5c38;
-    margin: 0px;
+    padding: 20px 10px 5px 10px;
+}
+article > h2{
+    margin: 10px 10px;
+    padding: 3px;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+}
+article > p{
+    margin: 10px;
+}
+article > h1 , h2{
+    color: var(--cor4);
+    font-family: var(--fonte_android);
 }
 
-article > h2{
-    font-family: 'idroid';
-    padding: 3px;
-    background-image: linear-gradient( to right, #84e1ad, white);
-    color: #1a5c38;
+p > a{
+    color: var(--cor4);
+}
+
+section{
+    background-color: var(--cor5);
+    padding: 30px;
 }
 
 aside{
-    background-color: #c5ebd6;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 15px;
+    margin: 20px;
+    background-color: var(--cor0);
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
+}
+aside > p, ul{
+    padding: 0px 10px;
 }
 aside > h3{
-    background-color: #2fa866;
+    background-color: var(--cor3);
     color: white;
-    margin: 0px;
-}
-
-ul{
-    columns: 2;
-    list-style-position: inside;
-}
-
-section#video{
-    background-color: #1a5c38;
-    margin: 0px;
+    border-radius: 10px 10px 0px 0px;
     padding: 10px;
+}
+aside > ul{
+    list-style-position: inside;
+    columns: 2;
 }
 
 footer{
-    text-align: center;
-    background-color: #1a5c38;
+    background-color: var(--cor5);
     color: white;
-    padding: 5px;
-    margin-top: 20px;
-}
-footer > p{
-    margin: 0px;
+    text-align: center;
+    padding: 10px;
 }
 footer > a{
     color: white;
     text-decoration: none;
     font-weight: bold;
+    margin: 0px 3px;
 }
 footer > a:hover{
-    color: #84e1ad;
+    color: var(--cor5);
+    background-color: var(--cor2);
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0px;
+    transition-duration: 0.3s;
 }
+
+/*1F517*/
