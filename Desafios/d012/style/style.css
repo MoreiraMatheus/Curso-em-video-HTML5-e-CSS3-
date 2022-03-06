@@ -7,56 +7,59 @@
     margin: 0px;
 }
 
-body{
+html, body{
     min-height: 100vh;
+    background-color: darkgray;
 }
 
 header {
-    color: white;
     background-color: black;
+    color: white;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header > h1{
+    padding-top: 50px;
     font-variant: small-caps;
 }
-header a{
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-header a:hover{
-    color: grey;
-}
-header h1{
-    font-size: 3em;
-    padding-top: 50px;
-}
-header p{
-    font-weight: lighter;
+header > p{
     padding-bottom: 50px;
 }
 
-main section{
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal{
     background-color: white;
     color: black;
-    margin: 30px 60px;
 }
-main section p{
-    margin-bottom: 15px;
-    font-size: 1.5em;
+
+section.imagem{
+    background-color: rgb(58, 58, 58);
+    color: white;
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
 }
 
 footer{
     background-color: black;
     color: white;
     text-align: center;
-}
-footer p{
-    padding: 5px;
-}
-footer a{
-    color: white;
-    text-decoration: none;
-}
-footer a:hover{
-    color: grey;
+    padding: 10px;
 }
