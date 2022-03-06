@@ -8,3 +8,5 @@ Repositório destinado a compartilhar meus estudos em HTML5 e CSS3 com base no c
 Durante o curso pude aprender muita coisa através de projetos práticos, confira alguns:
 
 [Projeto android](https://moreiramatheus.github.io/Curso-em-video-HTML5-e-CSS3-/Desafios/d010/)
+
+[Cordel moderno](https://moreiramatheus.github.io/Curso-em-video-HTML5-e-CSS3-/Desafios/d012/cordel.html)
