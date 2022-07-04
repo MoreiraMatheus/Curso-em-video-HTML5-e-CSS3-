@@ -14,6 +14,7 @@ html, body{
 body{
     background: url('../img/fundo-madeira.jpg') no-repeat center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 main{
@@ -37,4 +38,22 @@ main{
     left: 22px;
     height: 470px;
     width: 267px;
+}
+
+#redes-sociais{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#redes-sociais img{
+    border-radius: 50%;
+    width: 50px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+#redes-sociais img:hover{
+    border: 2px solid white;
+    transition: border 0.4s;
 }
