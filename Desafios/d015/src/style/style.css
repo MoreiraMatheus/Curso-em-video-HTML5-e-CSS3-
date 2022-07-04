@@ -30,3 +30,11 @@ main{
     height: 627px;
     background: url('../img/frame-iphone.png');
 }
+
+#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    height: 470px;
+    width: 267px;
+}
