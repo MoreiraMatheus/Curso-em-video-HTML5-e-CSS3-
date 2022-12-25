@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="teste.js" method="get">
+    <fieldset>
+      <legend>Sexo</legend>
+      <!-- Radio buttons só permitem que 1 seja selecionado por vez, por isso seus nomes devem ser iguais -->
+      <input type="radio" name="sexo" id="isexom" value="M" checked>
+      <label for="isexom">Masculino</label>
+      <br>
+      <input type="radio" name="sexo" id="isexof" value="F">
+      <label for="isexof">Feminino</label>
+    </fieldset>
+    <fieldset>
+      <legend>Esposrtes favoritos</legend>
+      <!-- Checkboxes permitem que mais de 1 opção seja selecionada -->
+      <input type="checkbox" name="fut" id="ifut">
+      <label for="ifut">Futebol</label>
+      <br>
+      <input type="checkbox" name="bask" id="ibask">
+      <label for="ibask">Basquete</label>
+      <br>
+      <input type="checkbox" name="vol" id="ivol">
+      <label for="ivol">Vôlei</label>
+      <br>
+      <input type="checkbox" name="gym" id="igym">
+      <label for="igym">Musculação</label>
+    </fieldset>
+  </form>
+</body>
+</html>
