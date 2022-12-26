@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="teste.js">
+    <p>
+      <label for="in1">Numero 1</label>
+      <input 
+        type="number" 
+        name="n1" 
+        id="in1" 
+        min="0" 
+        max="50" 
+        oninput="iout.innerHTML = Number(in1.value) + Number(in2.value)"
+      >
+    </p>
+    <p>
+      <label for="in2">Numero 2</label>
+      <input 
+        type="number" 
+        name="n2" 
+        id="in2" 
+        min="0" 
+        max="50"
+        oninput="iout.innerHTML = Number(in1.value) + Number(in2.value)"
+      >
+    </p>
+    <p>
+      <label for="iout">Soma:</label>
+      <output name="out" id="iout">0</output>
+    </p>
+    <hr>
+
+    <p>
+      <label for="ivalue">Valor:</label><br>
+      <input 
+        type="range" 
+        name="value" 
+        id="ivalue" 
+        min="0" 
+        max="10" 
+        oninput="outrange.innerHTML = Number(ivalue.value)">
+      <output id="outrange">5</output>
+    </p>
+
+    <hr>
+
+    <p>
+      <label for="iage">Em que ano você nasceu?</label>
+      <input type="number" name="age" id="iage" min="1900" max="2023" oninput="changeAge()">
+      <br>
+      <label for="outage">Sua idade é:</label>
+      <output id="outage">0</output>
+    </p>
+
+    <hr>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+
+  </form>
+  <script>
+    function changeAge(){
+      const atual = new Date().getFullYear()
+      outage.innerHTML = Number(atual) - Number(iage.value)
+    }
+  </script>
+</body>
+</html>
