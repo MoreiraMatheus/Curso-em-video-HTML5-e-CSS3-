@@ -4,3 +4,19 @@
   margin: 0;
   padding: 0;
 }
+
+body{
+  color: #e5e5e5;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 2px #222;
+  background-color: #233eff;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+h1{
+  padding: 8px;
+  text-align: center;
+}
