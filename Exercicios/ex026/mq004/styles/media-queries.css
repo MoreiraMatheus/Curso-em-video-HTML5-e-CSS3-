@@ -1,0 +1,36 @@
+/* outros dispositivos */
+
+/* typical device breakpoints */
+
+@media print { /* impressora */
+  main{
+    border: 1px solid black;
+  }
+
+  #telefone{ display: none; }
+  #impressora{ display: block; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* tablet */
+  body{
+    background-image: url(../images/back-tablet.jpg);
+  }
+  #telefone{ display: none; }
+  #tablet{ display: block; }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* desktop */
+  body{
+    background-image: url(../images/back-pc.jpg);
+  }
+  #telefone{ display: none; }
+  #pc{ display: block; }
+}
+
+@media screen and (min-width: 1200px){ /* grandes telas */
+  body{
+    background-image: url(../images/back-tv.jpg);
+  }
+  #telefone{ display: none; }
+  #tv{ display: block; }
+}
